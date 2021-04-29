@@ -49,7 +49,7 @@ public class SybaseASEJConnectDatabaseType extends BaseDatabaseType {
         if (url.startsWith("jdbc:p6spy:sybase:")) {
             return "com.p6spy.engine.spy.P6SpyDriver";
         }
-        return "com.sybase.jdbc4.jdbc.SybDriver";
+        return "net.sourceforge.jtds.jdbc.Driver";
     }
 
     @Override
